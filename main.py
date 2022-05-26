@@ -1,8 +1,8 @@
-# Check if a word is an anagrams 
-# Example:
-# find_anagrams("hello") --> False
-# find_anagrams("racecar") --> True
+# Recieve user input for anagrams
+subAnagram = input('Input subject of anagram: ')
+anagram = input('Input anagram: ')
 
+# Check if a word is an anagrams 
 
 def find_anagrams(word, word1):
     # [assignment] Add your code here
@@ -10,6 +10,16 @@ def find_anagrams(word, word1):
         return True
     else:
         return False   
+
+# Print a boolean result of find_anagrams
+def declareAnagram():
+    print(find_anagrams(subAnagram, anagram))
+
+declareAnagram()     
+
+
+
+
 
 # print(find_anagrams('one'))
 
@@ -23,7 +33,3 @@ def find_anagrams(word, word1):
 
 # print(alist)
 # print(alist.count('s'))
-
-print(find_anagrams('listen', 'slite'))
-
-
